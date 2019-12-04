@@ -7,8 +7,8 @@ function clearInput(){
   document.getElementById("txtName").value = "";
 }
 
+
 //gets database json file
-endpoint = "https://data.cityofchicago.org/resource/x8fc-8rcq.json";
 
 $(document).ready(function() {
 

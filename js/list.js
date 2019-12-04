@@ -1,6 +1,8 @@
 //connects the queries based on the input fields after the button is clicked and then prints
 //out the data
 function printOutQuery(nameOfLibrary){
+  endpoint = "https://data.cityofchicago.org/resource/x8fc-8rcq.json";
+
   //variable for holding the query
   var query = endpoint + "?";
   var switchScreens = "#screen3List";
