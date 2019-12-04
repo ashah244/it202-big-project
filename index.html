@@ -1,9 +1,96 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+	<link rel="manifest" href="/IT-202-Project-2/manifest.json">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>3 screen app</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	 crossorigin="anonymous">
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<style>
+		.content {
+			display: none;
+			margin: 1em;
+		}
+		#map {
+			height: 800px;  /* The height is 400 pixels */
+			width: 100%;  /* The width is the width of the web page */
+ 		}
+		/* Set the size of the div element that contains the map */
+	</style>
+
+</head>
+
 <body>
+	<!-- navigation bar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#screen2Search">Libraries</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#screen3List">No Idea</a>
+      </li>
+			<li class="nav-item">
+				<a class="nav-link" href="#screen4Map">CTA</a>
+			</li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+    </ul>
+  </div>
+  </nav>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+  <!-- the content divs -->
+  <div class="content" id="home">
+    Home page
+  </div>
+  <div class="content" id="screen2Search">
 
-</body>
+		<input type="text" name="Day" placeholder="Type in Library Name" id="txtName"><br>
+		<input type="submit" value="Submit" id="btnSearch">
+		<!-- <script src="js/map.js"></script> -->
+		<!-- <script src="js/list.js"></script> -->
+		<script src="js/search.js"></script>
+
+  </div>
+  <div class="content" id="screen3List">
+		No idea
+  </div>
+	<div class="content" id="screen4Map">
+		<div id="map"></div>
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAyTM2EArvlO3fNMLOKXwk4avkeZJVyLY">
+		</script>
+		Here is a map
+	</div>
+  <div class="content" id="about">
+		Hello welcome to my App: Libraries and CTA Lines <br>
+		Developed by Abhi Shah <br>
+		<h1><a href="https://github.com/ashah244/it202-bigProject">Here is my GitHub Link</a></h1>
+  </div>
+
+	<!-- <script>
+	if('serviceWorker' in navigator) {
+	  navigator.serviceWorker
+	           .register('/it202-bigProject/sw.js')
+	           .then(function() { console.log("Service Worker Registered"); });
+	}
+	</script> -->
+
+
+  </body>
+
 </html>
