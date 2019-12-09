@@ -17,10 +17,11 @@
 	<style>
 		.content {
 			display: none;
-			margin: 1em;
+			/* margin: 1em; */
+			padding-top:100px;
 		}
 		#map {
-			height: 800px;  /* The height is 400 pixels */
+			height: 800px;  /* The height is 800 pixels */
 			width: 100%;  /* The width is the width of the web page */
  		}
 		/* Set the size of the div element that contains the map */
@@ -31,7 +32,7 @@
 <body>
 	<!-- navigation bar -->
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<a class="navbar-brand" href="#">Navbar</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -55,7 +56,51 @@
       </li>
     </ul>
   </div>
-  </nav>
+  </nav> -->
+
+	<aside class="mdc-drawer mdc-drawer--modal" data-mdc-auto-init="MDCDrawer">
+<div class="mdc-drawer__content">
+ <nav class="mdc-list">
+	 <a class="mdc-list-item mdc-list-item--activated" href="#home" aria-current="page">
+<!--           <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i> -->
+		 <span class="mdc-list-item__text">Home</span>
+	 </a>
+	 <a class="mdc-list-item" href="#screen2Search">
+ <!--           <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i> -->
+		 <span class="mdc-list-item__text">Libraries</span>
+	 </a>
+	 <a class="mdc-list-item" href="#screen3List">
+<!--           <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i> -->
+		 <span class="mdc-list-item__text">List of the Libraries</span>
+	 </a>
+	 <a class="mdc-list-item" href="#screen4Map">
+<!--           <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i> -->
+		 <span class="mdc-list-item__text">CTA</span>
+	 </a>
+	 <a class="mdc-list-item" href="#about">
+ <!--           <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i> -->
+		 <span class="mdc-list-item__text">about</span>
+	 </a>
+
+ </nav>
+</div>
+</aside>
+
+<div class="mdc-drawer-scrim"></div>
+
+<header class="mdc-top-app-bar">
+<div class="mdc-top-app-bar__row">
+<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+ <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+ <span class="mdc-top-app-bar__title">CTA and Libraries</span>
+</section>
+<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+ <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Download">file_download</button>
+ <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Print this page">print</button>
+ <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Bookmark this page">bookmark</button>
+</section>
+</div>
+</header>
 
   <!-- the content divs -->
   <div class="content" id="home">
