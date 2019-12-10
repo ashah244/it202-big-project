@@ -7,7 +7,6 @@ self.addEventListener('install', function(e) {
       return cache.addAll([
         '/it202-big-project',
         '/it202-big-project/index.html',
-        '/it202-big-project/page_content/_about.html',
         '/it202-big-project/js/list.js',
         '/it202-big-project/js/search.js',
         '/it202-big-project/js/map.js',
