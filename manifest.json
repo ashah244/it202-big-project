@@ -1,11 +1,7 @@
 {
   "name": "CTA and Library",
   "short_name": "CTA and Library",
-  "theme_color": "#2196f3",
-  "background_color": "#2196f3",
-  "display": "standalone",
-  "Scope": "/",
-  "start_url": "/it202-big-project/index.html",
+
   "icons": [
     {
       "src": "/it202-big-project/images/icons/icon-72x72.png",
@@ -48,5 +44,9 @@
       "type": "image/png"
     }
   ],
-  "splash_pages": null
+  
+  "start_url": "/it202-big-project/index.html",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "theme_color": "#2196f3"
 }
