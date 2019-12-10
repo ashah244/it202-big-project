@@ -17,7 +17,6 @@
 	<style>
 		.content {
 			display: none;
-			/* margin: 1em; */
 			padding-top:100px;
 		}
 		#map {
@@ -77,7 +76,7 @@
 <!--           <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i> -->
 		 <span class="mdc-list-item__text">CTA</span>
 	 </a>
-	 <a class="mdc-list-item" href="#screen4Map">
+	 <a class="mdc-list-item" href="#screen5Mic">
  <!--           <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i> -->
 		 <span class="mdc-list-item__text">Record</span>
 	 </a>
@@ -119,7 +118,7 @@
 
   </div>
   <div class="content" id="screen3List">
-		No idea
+		Please go back to the Libraries Section to Search
   </div>
 	<div class="content" id="screen4Map">
 		<div id="map"></div>
@@ -130,7 +129,9 @@
 		<script src="js/map.js"></script>
 	</div>
 	<div class="content" id="screen5Mic">
-		Record Your Self
+		<audio id="player" controls></audio>
+		<script src="js/mic.js"></script>
+		<br>Record Your Self
 	</div>
   <div class="content" id="about">
 		Hello welcome to my App: Libraries and CTA Lines <br>
