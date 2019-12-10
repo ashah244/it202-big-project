@@ -28,7 +28,7 @@ document.getElementsByClassName("mdc-top-app-bar__navigation-icon")[0].addEventL
 //         navs[i].addEventListener("click", function() {
 //           drawer.open = false;
 //         })
-//       };
+//       };ddd
 
   $("nav.mdc-list a.mdc-list-item").on("click", function(e) {
      hideScreens();
