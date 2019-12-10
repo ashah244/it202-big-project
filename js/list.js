@@ -25,8 +25,10 @@ function printOutQuery(nameOfLibrary){
       $(switchScreens).html("");
       $.each(response, function(i,v){
         $(".content").hide();
-        $(switchScreens).append("<br>" + "Name: " + v.name_ + "<br>" + "Hourse of Operation: " +  v.hours_of_operation + "<br>" + "Address: "+ v.address + "<br>" + "Phone Number: " + v.phone + "<br>");
-        $(switchScreens).show();
+        if(v.name_.includes(nameOfLibrary)){
+          $(switchScreens).append("<br>" + "Name: " + v.name_ + "<br>" + "Hourse of Operation: " +  v.hours_of_operation + "<br>" + "Address: "+ v.address + "<br>" + "Phone Number: " + v.phone + "<br>");
+          $(switchScreens).show();
+        }
         clearInput();
       });
     });
