@@ -142,14 +142,29 @@
 	<script>
 	var drawer = document.querySelector('.mdc-drawer').MCDDrawer;
 	drawer = false;
-	</script> -->
-	<script>
+	</script>
+
+	<!-- <script>
 	if('serviceWorker' in navigator) {
 	  navigator.serviceWorker
 	           .register('/it202-big-project/sw.js')
 	           .then(function() { console.log("Service Worker Registered"); });
 	}
-	</script>
+	</script> -->
+
+	<script>
+	if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/it202-big-project/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+</script>
 
 
   </body>
