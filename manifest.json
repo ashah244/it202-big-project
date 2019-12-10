@@ -3,17 +3,17 @@
   "name": "Google Maps",
   "icons": [
     {
-      "src": "/IT-202-Project-2/icons-128.png",
+      "src": "/it202-bigProject/icons-128.png",
       "type": "image/png",
       "sizes": "128x128"
     },
     {
-      "src": "/IT-202-Project-2/icons-512.png",
+      "src": "/it202-bigProject/icons-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "/IT-202-Project-2/index.html",
+  "start_url": "/it202-bigProject/index.html",
   "background_color": "#3367D6",
   "display": "standalone",
   "theme_color": "#3367D6"
