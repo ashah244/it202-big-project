@@ -1,16 +1,25 @@
-importScripts('/IT-202-Project-2/cache-polyfill.js');
+importScripts('/it202-big-project/cache-polyfill.js');
 
 
 self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open('hi').then(function(cache){
       return cache.addAll([
-        '/IT-202-Project-2',
-        '/IT-202-Project-2/index.html',
-        '/IT-202-Project-2/page_content/_about.html',
-        '/IT-202-Project-2/js/list.js',
-        '/IT-202-Project-2/js/search.js',
-        '/IT-202-Project-2/js/map.js'
+        '/it202-big-project',
+        '/it202-big-project/index.html',
+        '/it202-big-project/page_content/_about.html',
+        '/it202-big-project/js/list.js',
+        '/it202-big-project/js/search.js',
+        '/it202-big-project/js/map.js',
+        '/it202-big-project/js/mic.js',
+        '/it202-big-project/images/icons/icon-72x72.png',
+        '/it202-big-project/images/icons/icon-96x96.png',
+        '/it202-big-project/images/icons/icon-128x128.png',
+        '/it202-big-project/images/icons/icon-144x144.png',
+        '/it202-big-project/images/icons/icon-152x152.png',
+        '/it202-big-project/images/icons/icon-192x192.png',
+        '/it202-big-project/images/icons/icon-384x384.png',
+        '/it202-big-project/images/icons/icon-512x512.png'
       ]);
     })
   );
